@@ -8,7 +8,7 @@ A successful response uses HTTP 201 and contains:
 
 - `id`: Internal order identifier.
 - `items`: Priced order line items.
-- `total_cents`: Total order price in cents.
+- `total`: Order total, with `amount_cents` in the smallest currency unit and `currency` as an ISO 4217 code.
 
 ## Get an order
 

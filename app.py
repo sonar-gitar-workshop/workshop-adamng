@@ -46,7 +46,7 @@ def create_order():
     order = {
         "id": order_id,
         "items": line_items,
-        "total_cents": total_cents,
+        "total": {"amount_cents": total_cents, "currency": "USD"},
     }
     ORDERS[order_id] = order
     return jsonify(order), 201
